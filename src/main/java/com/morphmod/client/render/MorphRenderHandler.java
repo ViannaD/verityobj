@@ -34,7 +34,7 @@ public class MorphRenderHandler {
 
     @SubscribeEvent
     public void onRenderPlayerPre(RenderPlayerEvent.Pre event) {
-        Player player = event.getPlayer();
+        Player player = event.getEntity();
         int morphId = ClientMorphManager.getMorph(player.getUUID());
         if (morphId < 0) return;
 
