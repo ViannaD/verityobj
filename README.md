@@ -18,16 +18,17 @@
 
 ## Como compilar
 
+Este pacote já vem com o **Gradle Wrapper incluído** (`gradlew`, `gradlew.bat`
+e a pasta `gradle/`), então você não precisa ter o Gradle instalado na sua
+máquina — o wrapper baixa a versão certa sozinho na primeira execução.
+
 1. Baixe o **Forge MDK 1.20.1** oficial em https://files.minecraftforge.net
-   (versão 47.2.0 recomendada) e extraia em uma pasta.
-2. Copie todo o conteúdo desta pasta (`morphmod/`) por cima da pasta do MDK
+   (versão 47.2.0 recomendada) e extraia em uma pasta — você só precisa dele
+   pelas dependências da Forge; não precisa copiar `gradlew` de lá.
+2. Copie o conteúdo desta pasta (`morphmod/`) por cima da pasta do MDK
    extraído, substituindo `build.gradle`, `settings.gradle`,
-   `gradle.properties` e a pasta `src`.
-   - **Importante**: mantenha os arquivos `gradlew`, `gradlew.bat` e a pasta
-     `gradle/wrapper/` (com `gradle-wrapper.jar` e `gradle-wrapper.properties`)
-     que vieram do MDK oficial — eles não estão neste pacote porque
-     `gradle-wrapper.jar` é um binário que precisa vir direto da Gradle/Forge,
-     mas são obrigatórios pra compilar e pro CI do GitHub funcionar.
+   `gradle.properties`, `gradlew`, `gradlew.bat`, a pasta `gradle/` e a
+   pasta `src`.
 3. No terminal, dentro da pasta do projeto, rode:
    - Linux/Mac: `./gradlew build`
    - Windows: `gradlew.bat build`
@@ -38,14 +39,14 @@
 
 ## Como subir para o GitHub
 
-Este pacote já vem com os arquivos de configuração prontos:
-`.gitignore`, `.gitattributes`, `LICENSE` e um workflow de CI em
-`.github/workflows/build.yml` que compila o mod automaticamente a cada push
-e disponibiliza o `.jar` gerado como artefato do Actions.
+Este pacote já vem com tudo pronto: `.gitignore`, `.gitattributes`,
+`LICENSE`, o **Gradle Wrapper** (`gradlew`/`gradlew.bat`/`gradle/`) e um
+workflow de CI em `.github/workflows/build.yml` que compila o mod
+automaticamente a cada push e disponibiliza o `.jar` gerado como artefato
+do Actions.
 
-1. Depois de seguir o passo "Como compilar" acima (juntando este pacote com
-   o MDK oficial, incluindo o `gradlew`/`gradle-wrapper.jar`), abra um
-   terminal na pasta do projeto e rode:
+1. Abra um terminal na pasta do projeto (depois de seguir o passo "Como
+   compilar" acima) e rode:
    ```
    git init
    git add .
