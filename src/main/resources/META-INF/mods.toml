@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+issueTrackerURL="https://github.com/"
+license="All Rights Reserved"
+
+[[mods]]
+modId="morphmod"
+version="1.0.0"
+displayName="Morph Mod"
+authors="Você"
+description='''
+Mod de Morph com 3 personagens selecionáveis por um painel, opção de voltar ao normal,
+e um item (Voicebox) que abre uma caixa de texto cosmética.
+'''
+
+[[dependencies.morphmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.morphmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

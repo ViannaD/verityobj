@@ -1,0 +1,17 @@
+Copyright (c) 2026 — Todos os direitos reservados.
+
+Este código e os assets (modelos, texturas) neste repositório não possuem
+uma licença de código aberto. Isso significa que, por padrão, ninguém além
+do autor tem permissão para copiar, redistribuir, modificar ou usar este
+projeto comercialmente.
+
+Se você quiser permitir que outras pessoas usem, modifiquem ou redistribuam
+este mod livremente, troque este arquivo por uma licença de código aberto,
+por exemplo:
+- MIT License (bem permissiva, quase sem restrições)
+- Apache License 2.0 (permissiva, com proteção extra contra patentes)
+- GNU GPLv3 (obriga quem redistribuir a manter o código aberto também)
+
+Você pode gerar o texto de qualquer uma dessas em https://choosealicense.com
+e colar aqui. Lembre-se de também atualizar o campo `license` em
+`src/main/resources/META-INF/mods.toml`.
